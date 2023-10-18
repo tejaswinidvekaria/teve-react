@@ -1,20 +1,27 @@
-// function Header(props) { 
-// or instead of passing props here, you can destructure it with {}, and as long as you know what props are being passed in such as anyText, we can pull it out and we can directly us anyText instead of props.anyText
+import PropTypes from 'prop-types'
+// propType : "Typechecking for props i.e string/numbers/functions" : impt enter
 function Header({ anyText }) { 
-  // props is gonna be an object with any props that are passed in.
-
   return (
       <header>
       <div className="container">
-         {/* And you need to catch that prop into the component */}
-        {/* I am putting something dynamic here that is why using {} in h1  */}
-        {/* <h1>{props.anyText}</h1> */}
-{/* or */}
         <h1>{anyText}</h1>
         </div>
       </header>
-    //   you can not write anything after this
   )
 }
 
+// Setting ups default props
+Header.defaultProps = {
+  anyText: "Hello Happy Customers"
+}
+
+// NameOfComponent.defaultProps ={
+  // setParticularProps:"value",
+// }
+
+
+Header.prototype = {
+  // You don't need to use PropTypes instead of that you can use typeScript which is superset of JavaScript which has static type checking just like Java.
+  anyText: PropTypes.string,
+}
 export default Header
