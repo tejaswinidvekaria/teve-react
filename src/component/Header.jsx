@@ -13,7 +13,9 @@ function Header({ anyText,bgColor,textColor }) {
   )
 }
 Header.defaultProps = {
-  anyText: "Hello Happy Customers"
+  anyText: "Hello Happy Customers",
+  bgColor:'yellow',
+  textColor:'maroon'
 }
 
 Header.prototype = {
