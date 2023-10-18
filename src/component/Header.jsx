@@ -1,27 +1,20 @@
 import PropTypes from 'prop-types'
-// propType : "Typechecking for props i.e string/numbers/functions" : impt enter
 function Header({ anyText }) { 
   return (
-      <header>
+    // for inline styling : style="{{double-curly-braces}} "
+    // whatever the properties in the css with hyphen is in camelCase in JavaScript i.e css : background-color == js: backgroundColor
+      <header style={{backgroundColor:'brown', color : 'orange' }}>
       <div className="container">
         <h1>{anyText}</h1>
         </div>
       </header>
   )
 }
-
-// Setting ups default props
 Header.defaultProps = {
   anyText: "Hello Happy Customers"
 }
 
-// NameOfComponent.defaultProps ={
-  // setParticularProps:"value",
-// }
-
-
 Header.prototype = {
-  // You don't need to use PropTypes instead of that you can use typeScript which is superset of JavaScript which has static type checking just like Java.
   anyText: PropTypes.string,
 }
 export default Header
