@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
-function Header({ anyText }) {
-  // We can put style in the variable, and pass it in the single curly bracket in the style of header. 
+function Header({ anyText,bgColor,textColor }) {
   const headerStyles = {
-    backgroundColor:'maroon', color: 'green'
+    backgroundColor:bgColor, color: textColor
       
   }
   return (
