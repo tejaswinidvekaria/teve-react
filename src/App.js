@@ -1,26 +1,33 @@
 import Header from "./component/Header";
 import FeedbackItem from "./component/FeedbackItem";
-// import CardComponent from "./component/shared/CardComponent";
+import CardComponent from "./component/shared/CardComponent";
 
 function App() {
-
+    const [feedback, setFeedback] = useState([[
+        {
+            id: 1,
+            rating: 10,
+            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            id: 2,
+            rating: 10,
+            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            id: 3,
+            rating: 10,
+            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        }
+    ]])
     return (
         <>
-            <Header bgColor='yellow' textColor='blue'/>
+            <Header/>
             <div className="container">
-                <FeedbackItem rating={1} text={"Great experience"} />
-                {/* <CardComponent>
-                    This is CardComponent
-                </CardComponent> */}
+                <FeedbackItem/>
             </div>
         </>
     )
 
 }
 export default App;
-
-// state is just a data : there are 2 types of states : 
-// 1. component level state : associated with the specific component (No other components need to use that data)
-// 2. App - level/global state : share the state among multiple components.
-// state of react is immutable, you can't change it directly but it has to be set.
-
