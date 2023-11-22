@@ -100,6 +100,6 @@ header {
 }
 
 .cardComponent.reverse{
-    background-color:burlywood;
-    color:chartreuse;
+    background-color:rgb(49, 12, 124);
+    color:rgb(0, 208, 255);
 }

@@ -1,6 +1,9 @@
 function CardComponent({children,reverse}) {
   return (
-      <div className="cardComponent reverse">{children}</div>
+    // Conditional class : 
+    <div className={`cardComponent ${reverse && 'reverse'}`}>{children}</div>
+    // $<--if, {} <-- for template string
+    //  && <-- Then, 'reverse'<-class reverse
   )
 }
 

@@ -6,7 +6,7 @@ function FeedbackItem(
 ) {
    
     return (
-        <CardComponent>
+        <CardComponent reverse={true}>
             <div className="ratingDisplay">
               {item.rating}
             </div>
