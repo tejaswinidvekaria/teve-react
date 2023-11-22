@@ -1,30 +1,17 @@
 import Header from "./component/Header";
-import FeedbackItem from "./component/FeedbackItem";
-import CardComponent from "./component/shared/CardComponent";
+// we don't need this FeedbackItem here as we don't need a single item however we need bunch of items, that's why we will use FeedbackList.
+// import FeedbackItem from "./component/FeedbackItem";
+import { useState} from "react";
+import FeedbackData from "./data/FeedbackData";
+import FeedbackList from "./component/FeedbackList";
 
 function App() {
-    const [feedback, setFeedback] = useState([[
-        {
-            id: 1,
-            rating: 10,
-            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-            id: 2,
-            rating: 10,
-            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-            id: 3,
-            rating: 10,
-            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        }
-    ]])
+    const [feedback, setFeedback] = useState(FeedbackData)
     return (
         <>
             <Header/>
             <div className="container">
-                <FeedbackItem/>
+                <FeedbackList feedbackList={feedback} />
             </div>
         </>
     )

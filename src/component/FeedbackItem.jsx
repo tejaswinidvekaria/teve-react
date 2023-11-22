@@ -1,6 +1,8 @@
 import CardComponent from './shared/CardComponent'
 
-function FeedbackItem({ rating, text }) {
+function FeedbackItem(
+    { rating, text }
+) {
    
     return (
         <CardComponent>
