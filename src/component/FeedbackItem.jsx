@@ -1,5 +1,7 @@
 import CardComponent from './shared/CardComponent'
 
+import PropTypes from 'prop-types'
+
 function FeedbackItem(
   // we simply passing item in prop of FeedbackItem function.
     { item }
@@ -8,13 +10,16 @@ function FeedbackItem(
     return (
         <CardComponent reverse={true}>
             <div className="ratingDisplay">
-              {item.rating}
+                {item.rating}
             </div>
             <div className="textDisplay">
-              {item.text}
+                {item.text}
             </div>
-      </CardComponent>
+        </CardComponent>
   )
 }
 
+FeedbackItem.propTypes = {
+  item: PropTypes.object.isRequired,
+}
 export default FeedbackItem
