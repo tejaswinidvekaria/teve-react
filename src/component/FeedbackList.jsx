@@ -1,7 +1,7 @@
-function FeedbackList({feedback}) { 
+function FeedbackList({feedbackList }) { 
+    console.log(feedbackList)
     return (
         <div>
-            {/* Now we will bring this list into App.js */}
         List
         </div>
     )
