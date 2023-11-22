@@ -6,7 +6,7 @@ import FeedbackData from "./data/FeedbackData";
 import FeedbackList from "./component/FeedbackList";
 
 function App() {
-    const [feedback, setFeedback] = useState()
+    const [feedback, setFeedback] = useState(FeedbackData)
     return (
         <>
             <Header/>

@@ -1,16 +1,17 @@
 import CardComponent from './shared/CardComponent'
 
 function FeedbackItem(
-    { rating, text }
+  // we simply passing item in prop of FeedbackItem function.
+    { item }
 ) {
    
     return (
         <CardComponent>
             <div className="ratingDisplay">
-              {rating}
+              {item.rating}
             </div>
             <div className="textDisplay">
-              {text}
+              {item.text}
             </div>
       </CardComponent>
   )

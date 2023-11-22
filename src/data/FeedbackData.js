@@ -2,12 +2,12 @@ const FeedbackData =[
 // set this array to separate file instead of write it into App.js file.
     {
         id: 1,
-        rating: 10,
+        rating: 7,
         text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
         id: 2,
-        rating: 10,
+        rating: 8,
         text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
