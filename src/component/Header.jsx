@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-function Header({ anyText,bgColor,textColor }) {
+function Header({ anyText,bgColor,textColor}) {
   const headerStyles = {
     backgroundColor:bgColor, color: textColor
       
@@ -13,9 +13,9 @@ function Header({ anyText,bgColor,textColor }) {
   )
 }
 Header.defaultProps = {
-  anyText: "Hello Happy Customers",
-  bgColor:'yellow',
-  textColor:'maroon'
+  anyText: "Feedbacks",
+  bgColor:'white',
+  textColor:'Blue'
 }
 
 Header.prototype = {
