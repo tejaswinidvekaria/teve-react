@@ -9,7 +9,7 @@ function FeedbackItem(
     { item }
 ) {
 
-  const handleClick=() => console.log(item.id);
+  const handleClick=(id) => console.log(id);
    
     return (
         <CardComponent reverse={true}>
@@ -17,7 +17,7 @@ function FeedbackItem(
           {item.rating}
           
         </div>
-        <button onClick={handleClick} className="close">
+        <button onClick={(id)=>handleClick(item.id)} className="close">
           <FaTimes color='purple'/>
         </button>
         <div className="textDisplay">
