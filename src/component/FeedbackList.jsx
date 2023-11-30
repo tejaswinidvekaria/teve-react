@@ -1,7 +1,7 @@
 import FeedbackItem from './FeedbackItem';
 import PropTypes from 'prop-types'
 
-function FeedbackList({feedbackList}) {
+function FeedbackList({feedbackList,handleDelete}) {
     console.log(feedbackList); 
     if (!feedbackList || feedbackList.length === 0) { 
         return "No feedback found yet.";
@@ -13,7 +13,7 @@ function FeedbackList({feedbackList}) {
                     <FeedbackItem
                         key={item.id}
                         item={item}
-                        handleDelete={(id)=>console.log(id)}
+                        handleDelete={handleDelete}
                     />)
             }
             
