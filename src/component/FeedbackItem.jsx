@@ -6,10 +6,8 @@ import PropTypes from 'prop-types'
 
 function FeedbackItem(
   // we simply passing item in prop of FeedbackItem function.
-    { item }
+    { item,handleDelete }
 ) {
-
-  const handleClick=(id) => console.log(id);
    
     return (
         <CardComponent reverse={true}>
@@ -17,7 +15,7 @@ function FeedbackItem(
           {item.rating}
           
         </div>
-        <button onClick={(id)=>handleClick(item.id)} className="close">
+        <button onClick={(id)=>handleDelete(item.id)} className="close">
           <FaTimes color='purple'/>
         </button>
         <div className="textDisplay">
