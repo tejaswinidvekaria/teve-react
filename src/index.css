@@ -1,105 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.textDisplay {
-    box-sizing: border-box;
-    color: pink;
-    line-height: 1.6;
-}
-body{
-    /* display:contents; */
-    background-color: #202142;
-    font-family: 'Poppins', sans-serif;
-    color: cadetblue;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.feedbackCard {
-    background-color: #fff;
-    color: #333;
-    border-radius: 15px;
-    padding: 40px 50px;
-    margin: 20px 0;
-    position: relative;
-  }
-
-.ratingDisplay {
-    position: relative;
-    background: #f4f4f4;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 19px;
-    border: 1px #eee solid;
-    transition: 0.3s;
-  }
-.num-display {
-    background: #ff6a95;
-    color: #fff;
-}  
-
-.ratingDisplay {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-}
-
-.container {
-    max-width: 768px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-header {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-.rating {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 30px 0 40px;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px 0 40px;
-  }
-
-  /* @media (max-width: 600px) {
-    .rating li {
-      margin: 10px 3px;
-    } */
-
-.cardComponent{
-    background-color: #ff6a95;
-    color: #202142;
-    border-radius: 15px;
-    padding: 40px 50px;
-    margin: 20px 0;
-    position: relative;
-}
-
-.cardComponent h2{
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.cardComponent.reverse{
-    background-color:rgb(49, 12, 124);
-    color:rgb(0, 208, 255);
-}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
