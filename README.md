@@ -35,6 +35,10 @@ with
     "eject": "react-scripts eject"
   },
 
+
+npm i react-router-dom react-icons
+
+
 ref : https://tailwindcss.com/docs/guides/create-react-app
 ref : https://daisyui.com/docs/install/
 
