@@ -15,7 +15,7 @@
 //             }
 //         })
         
-//         cost data = await response.json();
+//         const data = await response.json();
 
 //         console.log(data);
 //     }
@@ -30,7 +30,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
 import Spinner from '../layout/Spinner'
-import UserItem from './UserItem'
+import UserItem from '../users/UserItem'
 
 function UserResults() {
     const [users, setUsers] = useState([])
@@ -58,18 +58,27 @@ function UserResults() {
     if (!loading) {
         return (
             <div className='grid grid-cols-1 gap-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2'>
-                {users.map((user) => (
+                {/* {users.map((user) => (
                     // <h3>{users.login}</h3>
                     <UserItem key={user.id} user={user}/>
                 ))}
+            </div> */}
+                {users.length > 0 ? (
+                    users.map((user) => (
+                        <UserItem key={user.id} user={user} />
+                    ))
+                ) : (
+                    <p>No users found</p>
+                )}
             </div>
-        )
-    } else { 
-        // return
-        // <h3>
-        //     Loading...!
-        // </h3>
-        return <Spinner/>
+        );
     }
+    // else { 
+    //     // return
+    //     // <h3>
+    //     //     Loading...!
+    //     // </h3>
+    //     return <Spinner/>
+    // }
 }
 export default UserResults;
